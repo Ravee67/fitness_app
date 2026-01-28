@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Plans — FitStart</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">🏃</div>
+          <div>
+            <div style="font-size:.95rem">FitStart</div>
+            <div style="font-size:.72rem;opacity:.9">Health & Fitness for everyone</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="plans.html">Plans</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <button id="theme-toggle" class="theme-toggle" title="Toggle theme">Dark</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 class="section-title">Fitness Plans</h2>
+        <p class="muted small">Three structured plans for different experience levels. Click "View Details" to expand a plan.</p>
+        <div class="plans-grid" style="margin-top:.75rem">
+          <!-- Reuse same plan cards as index page -->
+          <article class="plan-card">
+            <div class="plan-header">
+              <div class="plan-title"><div style="font-size:1.5rem">🟢</div><div><h3>Beginner Plan</h3><div class="muted small">Goal: Build fitness habit & flexibility</div></div></div>
+              <div class="pill">~220 kcal/day</div>
+            </div>
+            <div class="plan-body small">
+              <strong>Workout (30–40 min)</strong>
+              <ul class="muted small" style="margin-top:.4rem"><li>Walking – 20 min (100 cal)</li><li>Bodyweight squats – 3×10 (50 cal)</li><li>Knee/Wall push-ups – 3×8 (40 cal)</li><li>Stretching/Yoga – 10 min (30 cal)</li></ul>
+              <div class="plan-actions"><button class="btn btn-primary" onclick="showDetails('beginner')">View Details</button></div>
+              <div id="details-beginner" class="expand-details" style="display:none">
+                <strong>Food Plan (1,800 kcal)</strong>
+                <ul class="food-list"><li>Breakfast: Oatmeal + banana (350 cal)</li><li>Lunch: Brown rice + vegetables + lentils (500 cal)</li><li>Snack: Fruits or nuts (200 cal)</li><li>Dinner: Grilled vegetables + soup (400 cal)</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-header">
+              <div class="plan-title"><div style="font-size:1.5rem">🟡</div><div><h3>Moderate Plan</h3><div class="muted small">Goal: Fat loss & strength</div></div></div>
+              <div class="pill">~460 kcal/day</div>
+            </div>
+            <div class="plan-body small">
+              <strong>Workout (45–60 min)</strong>
+              <ul class="muted small" style="margin-top:.4rem"><li>Jogging – 15 min (150 cal)</li><li>Squats – 4×15 (80 cal)</li><li>Push-ups – 4×12 (70 cal)</li><li>Plank – 3×30 sec (40 cal)</li><li>Jump rope – 10 min (120 cal)</li></ul>
+              <div class="plan-actions"><button class="btn btn-primary" onclick="showDetails('moderate')">View Details</button></div>
+              <div id="details-moderate" class="expand-details" style="display:none">
+                <strong>Food Plan (2,200 kcal)</strong>
+                <ul class="food-list"><li>Breakfast: Eggs + whole wheat toast (400 cal)</li><li>Lunch: Chicken + rice + salad (600 cal)</li><li>Snack: Yogurt + fruits (300 cal)</li><li>Dinner: Fish/tofu + vegetables (500 cal)</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-header">
+              <div class="plan-title"><div style="font-size:1.5rem">🔴</div><div><h3>Advanced Plan</h3><div class="muted small">Goal: Muscle gain & endurance</div></div></div>
+              <div class="pill">~850 kcal/day</div>
+            </div>
+            <div class="plan-body small">
+              <strong>Workout (60–90 min)</strong>
+              <ul class="muted small" style="margin-top:.4rem"><li>Running – 20 min (250 cal)</li><li>Weight training – 45 min (300 cal)</li><li>HIIT – 15 min (200 cal)</li><li>Core workout – 10 min (100 cal)</li></ul>
+              <div class="plan-actions"><button class="btn btn-primary" onclick="showDetails('advanced')">View Details</button></div>
+              <div id="details-advanced" class="expand-details" style="display:none">
+                <strong>Food Plan (2,800–3,000 kcal)</strong>
+                <ul class="food-list"><li>Breakfast: Protein smoothie + oats (600 cal)</li><li>Lunch: Lean meat/fish + rice + veggies (700 cal)</li><li>Snack: Protein bar + nuts (400 cal)</li><li>Dinner: Whole grains + protein + fats (700 cal)</li><li>Post-workout: Protein shake (300 cal)</li></ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer class="footer center"><div>© FitStart</div></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

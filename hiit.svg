@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+  <rect width="100%" height="100%" fill="#fff5f0"/>
+  <rect x="10" y="10" width="460" height="250" rx="12" fill="#fff1ec" stroke="#ffd9cc"/>
+  <text x="50%" y="42%" font-size="36" text-anchor="middle">⚡</text>
+  <text x="50%" y="72%" font-size="20" text-anchor="middle" fill="#9a2b12">Beginner HIIT</text>
+</svg>
